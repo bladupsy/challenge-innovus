@@ -1,0 +1,14 @@
+<p>user works!</p>
+<h1>Texto Principal</h1>
+<input [(ngModel)]="textoPrincipal" name="textoPrincipal"  >
+<h2>Busqueda</h2>
+<input [(ngModel)]="textoBuscado" name="textoBuscado"  (keyup.Space)="getSearch($event)" (keyup.enter)="getSearch($event)" >
+<!-- <button type="button" class="btn btn--primary btn--inside uppercase" (click)="getSearchOfButton()">Search</button> -->
+<span>*Presione enter o espacio para buscar</span>
+
+<div>
+  <p>{{textoPrincipal}}</p>
+  <p>{{textoResultado}}</p>
+  <p>{{infoDate}}</p>
+</div>
+
