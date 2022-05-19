@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ParticipantsComponent implements OnInit {
   listOParticipants = ['Silvia', 'Pedro', 'Augusto', 'Julia', 'Paola', 'Felipe']
-  rankingOfParticipants = []
+  rankingOfParticipants = ['Silvia', 'Pedro', 'Augusto', 'Julia', 'Paola', 'Felipe']
 
 
 
@@ -20,6 +20,7 @@ export class ParticipantsComponent implements OnInit {
       // this.listOParticipants.add()
       //Agrega a Micaela
       this.listOParticipants.unshift('Micaela')
+
   }
 
   ngOnInit(): void {
